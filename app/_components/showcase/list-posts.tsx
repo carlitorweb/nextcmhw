@@ -17,7 +17,7 @@ export default function ListPosts({ post }: Props) {
       href='/posts/[slug]'
       className='group pt-2 border-t-4 border-slate-900 duration-300 hover:border-cyan-600'>
       <h2
-        className={`${merriweather.className} font-semibold text-slate-900 duration-300 group-hover:text-cyan-600 text-2xl`}>
+        className={`${merriweather.className} font-semibold text-slate-800 duration-300 group-hover:text-cyan-600 text-2xl`}>
         {post.title}
       </h2>
 

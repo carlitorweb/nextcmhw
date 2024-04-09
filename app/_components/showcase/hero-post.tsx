@@ -21,7 +21,7 @@ export default function HeroPost({ title, coverImage, slug, author }: Props) {
         <CoverImage
           title={title}
           src={coverImage}
-          classN='w-full object-cover object-top duration-300 aspect-[16/9] grayscale group-hover:grayscale-0'
+          classN='w-full object-cover object-top duration-300 mix-blend-multiply opacity-90 aspect-[16/9] grayscale group-hover:grayscale-0'
           slug={slug}
         />
       </div>
@@ -34,7 +34,7 @@ export default function HeroPost({ title, coverImage, slug, author }: Props) {
 
         <div className='flex-1'>
           <h2
-            className={`${merriweather.className} font-semibold text-slate-900 duration-300 group-hover:text-cyan-600 text-2xl lg:text-3xl`}>
+            className={`${merriweather.className} font-semibold text-slate-800 duration-300 group-hover:text-cyan-600 text-2xl lg:text-3xl`}>
             <Link as={`/posts/${slug}`} href='/posts/[slug]'>
               {title}
             </Link>

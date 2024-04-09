@@ -20,7 +20,7 @@ export default function CategoryPosts({ posts }: Props) {
             <CoverImage
               title={post.title}
               src={post.coverImage}
-              classN='w-full object-cover object-top duration-300 aspect-[16/9] grayscale group-hover:grayscale-0'
+              classN='w-full object-cover object-top duration-300 mix-blend-multiply opacity-90 aspect-[16/9] grayscale group-hover:grayscale-0'
               slug={post.slug}
             />
 
@@ -32,7 +32,7 @@ export default function CategoryPosts({ posts }: Props) {
 
               <div className='flex-1'>
                 <h3
-                  className={`${merriweather.className} font-bold text-slate-900 duration-300 group-hover:text-cyan-600 text-xl`}>
+                  className={`${merriweather.className} font-bold text-slate-800 duration-300 group-hover:text-cyan-600 text-xl`}>
                   <Link as={`/posts/${post.slug}`} href='/posts/[slug]'>
                     {post.title}
                   </Link>
